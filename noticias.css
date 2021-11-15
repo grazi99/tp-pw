@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-image: url("background1.jpg");
+}
+.margen{
+    margin:15px;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+.caja-titulo{
+    height: 200px;
+    background-color:white;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.alineacion-titulo{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.distribucion-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color:orange;
+}
+.fila-navbar{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    transition-duration: 0.4s;
+}
+.boton-navbar{
+    background-color: orange;
+    border: orange;
+    padding: 20px;
+}
+.boton-navbar:hover{
+    background-color: white;
+}
+.display-menu{
+    display: flex;
+    background-color: orange;
+}
+.aver{
+    background-color:whitesmoke;
+    height: 800px;
+}
+.central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    position: relative;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}

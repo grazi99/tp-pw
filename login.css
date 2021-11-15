@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    background-image: url("background1.jpg");
+    background-color: white;
+}
+.distribucion-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color:orange;
+}
+.fila-navbar{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    transition-duration: 0.4s;
+}
+.boton-navbar{
+    background-color: orange;
+    border: orange;
+    padding: 20px;
+}
+.boton-navbar:hover{
+    background-color: white;
+}
+.boton-iniciar-sesion{
+    background-color: white;
+    border: white;
+    padding: 20px;
+}
+.caja{
+}
+.caja-central{
+    margin: 120px;
+    background-color: orange;
+    height: 200px;
+    width: 1000px;
+}
+.caja-central-titulo{
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+.prueba{
+    margin: 20px; 
+    background-color: yellowgreen;
+    height: 90px;
+    width: 90px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.ingreso-datos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
