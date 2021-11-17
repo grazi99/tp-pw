@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+.margen{
+    margin:15px;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+}
+.caja-titulo{
+    height: 200px;
+    background-color:white;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.alineacion-titulo{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.distribucion-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color:orange;
+}
+.fila-navbar{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    transition-duration: 0.4s;
+}
+.boton-navbar{
+    background-color: orange;
+    border: orange;
+    padding: 20px;
+}
+.boton-navbar:hover{
+    background-color: white;
+}
+.display-menu{
+    display: flex;
+    background-color: orange;
+}
+.caja-menu1{
+    width: 640px;
+    height: 300px;
+    background-color:white;
+    border-style: none solid solid none;
+    border-color: black;
+    border-width: 1px;
+}
+.caja-menu2{
+    width: 640px;
+    height: 300px;
+    background-color:white;
+    border-style: none none solid none;
+    border-color: black;
+    border-width: 1px;
+}
+.caja-menu3{
+
+    height: 300px;
+    width: 1280px;
+    background-color:orange;
+    border-style: none;
+    border-color: black;
+    border-width: 1px;
+}
+.caja-menu4{
+    width: 640px;
+    height: 300px;
+    background-color:yellow;
+    
+}
+.display-ofertas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;  
+}
+.caja1-ofertas{
+    margin: 10px;
+    width: 250px;
+    height: 180px;
+    background-color: white;
+}
+.boton-caja1-ofertas{
+    background-color: white;
+    border: whitesmoke;
+}
+.boton-caja1-ofertas:hover{ 
+    background-color: orange;
+    
+}
+.alinear-caja1{
+    display: flex;
+    justify-content: center;
+} 
+.titulo-caja1{
+    height: 65px;
+    background-color: orange;
+    padding-top:10px;
+}
+
+.caja{
+    height: 65px;
+    width: 100px;
+    background-color: gold;
+    border-style: solid;
+    border-color:lightskyblue;
+}
+.caja-menu3-separacion{
+   margin: 0.5px;
+   padding: 0px;
+}
+
+.margen-lista{
+    column-gap: 2px;
+    margin: 25px;
+}
+.lista{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color:orange;
+}
+.separacion-lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}

@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url("imagenes/background1.jpg");
+    background-image: url("./background1.jpg");
     background-color: white;
 }
 .distribucion-navbar{
@@ -29,12 +29,10 @@ body{
     border: white;
     padding: 20px;
 }
-.caja{
-}
 .caja-central{
     margin: 120px;
     background-color: orange;
-    height: 375px;
+    height: 350px;
     width: 1000px;
 }
 .caja-central-titulo{

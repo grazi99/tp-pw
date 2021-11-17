@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url("imagenes/background1.jpg");
+    background-image: url('./background1.jpg');
     background-color: white;
 }
 .distribucion-navbar{
@@ -24,17 +24,15 @@ body{
 .boton-navbar:hover{
     background-color: white;
 }
-.boton-register{
+.boton-iniciar-sesion{
     background-color: white;
     border: white;
     padding: 20px;
 }
-.caja{
-}
 .caja-central{
     margin: 120px;
     background-color: orange;
-    height: 375px;
+    height: 200px;
     width: 1000px;
 }
 .caja-central-titulo{
@@ -44,15 +42,7 @@ body{
     border-style: none none solid none;
     border-width: 1px;
 }
-.prueba{
-    margin: 20px; 
-    background-color: yellowgreen;
-    height: 90px;
-    width: 90px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-}
+
 .ingreso-datos{
     display: flex;
     justify-content: center;
