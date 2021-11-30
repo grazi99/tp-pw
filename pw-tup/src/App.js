@@ -1,4 +1,3 @@
-
 import './indice.css';
 import React from "react";
 import {
@@ -15,14 +14,16 @@ import Register from './components/Register';
 import Navbar from './components/Navbar';
 import NoticiaUM1 from './components/NoticiaUM1';
 import NoticiaUM2 from './components/NoticiaUM2';
+import NoticiaD1 from './components/NoticiaD1';
+import NoticiaD2 from './components/NoticiaD2';
+import Deportes from './components/Deportes';
+import Politica from './components/Politica';
+import Espectaculos from './components/Espectaculos';
 
 export default function App() {
   return (
     <Router>
       <Navbar />
-        {/*
-         A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/test">
             <Testeo />
@@ -33,11 +34,26 @@ export default function App() {
           <Route path="/noticiaUM2">
             <NoticiaUM2 />
           </Route>
+          <Route path="/noticiaD1">
+            <NoticiaD1 />
+          </Route>
+          <Route path="/noticiaD2">
+            <NoticiaD2 />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/deportes">
+            <Deportes />
+          </Route>
+          <Route path="/politica">
+            <Politica />
+          </Route>
+          <Route path="/espectaculos">
+            <Espectaculos />
           </Route>
           <Route path="/">
             <Inicio />

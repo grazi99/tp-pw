@@ -1,4 +1,5 @@
 import React from 'react';
+import './noticias.css'
 import img from './covid.jpg';
 function NoticiaD2() {
     return (
@@ -12,8 +13,9 @@ function NoticiaD2() {
             <div className="imagen">
                 <img src={img} width="500"/>
             </div>
-            <div className="texto">
-                <p style={{width: "800", position: "relative right 175px"}}>El Ministerio de Salud de Santa Fe informó este sábado 42 casos de coronavirus en todo el territorio provincial, de los cuales 25 fueron registrados en Rosario.
+            <div className="textoNoticiaD2">
+                <p style={{width: "800px"}}>
+                    El Ministerio de Salud de Santa Fe informó este sábado 42 casos de coronavirus en todo el territorio provincial, de los cuales 25 fueron registrados en Rosario.
 
                     Con estos números, desde el comienzo de la pandemia los infectados en la provincia ascienden a 470.924.
                     

@@ -3,7 +3,7 @@ import img1 from './alberto.jpg'
 import img2 from './messi.jpg'
 import img3 from './covid.jpg'
 import img4 from './kiosquero.jpg'
-import NoticiaUM1 from './NoticiaUM1';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -22,8 +22,8 @@ function Inicio() {
                         <h1 style={{color:"brown"}} className="centrar">Nino Noticias</h1>
                 </div>
             </div>
-            <div style={{color:"brown"}} className="margen">
-                <b> Te damos las bienvenidas a Nino Noticias ¡En este sitio podrás encontrar todas las noticias de la actualidad!</b>
+            <div style={{color:"brown"}}  className="margen">
+                <b> Te damos la bienvenida a Nino Noticias ¡En este sitio podrás encontrar todas las noticias de la actualidad!</b>
             </div>
         </div><div>
                 <div className="display-menu">
@@ -77,11 +77,11 @@ function Inicio() {
                 </div>
                 <div className="caja-menu3">
                     <div className="lista">
-                        <h4>Categorias</h4>
+                        <h4 style={{marginLeft:"50px"}}>Categorias</h4>
                         <ul className="separacion-lista">
-                            <li>Deportes</li>
-                            <li>Economia</li>
-                            <li>Salud</li>
+                            <Link to="/deportes"><li>Deportes</li></Link>
+                            <Link to="/politica"><li>Politica</li></Link>
+                            <Link to="/espectaculos"><li>Espectaculos</li></Link>
                         </ul>
                     </div>
                 </div>

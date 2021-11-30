@@ -109,13 +109,6 @@ body{
     padding-top:10px;
 }
 
-.caja{
-    height: 65px;
-    width: 100px;
-    background-color: gold;
-    border-style: solid;
-    border-color:lightskyblue;
-}
 .caja-menu3-separacion{
    margin: 0.5px;
    padding: 0px;

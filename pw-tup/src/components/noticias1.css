@@ -1,0 +1,11 @@
+
+margen{
+    margin-left: 10px;
+}
+.titulos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color:orange;
+}

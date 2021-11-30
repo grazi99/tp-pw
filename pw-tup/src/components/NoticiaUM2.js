@@ -1,4 +1,5 @@
 import React from 'react';
+import './noticias.css';
 import img from './kiosquero.jpg';
 function NoticiaUM2() {
     return (
@@ -12,8 +13,8 @@ function NoticiaUM2() {
             <div className="imagen">
                 <img src={img} width="500"/>
             </div>
-            <div className="texto">
-                <p style={{position: "relative right 65px"}}>El kiosquero Roberto Sabo, asesinado el pasado domingo durante un asalto en su comercio de la localidad bonaerense de Ramos Mejía, partido de La Matanza, recibió cuatro disparos en el tórax que le provocaron la muerte, según el resultado preliminar de autopsia, informaron fuentes judiciales.
+            <div className="textoNoticiaUM2">
+                <p style={{width: "800px"}}>El kiosquero Roberto Sabo, asesinado el pasado domingo durante un asalto en su comercio de la localidad bonaerense de Ramos Mejía, partido de La Matanza, recibió cuatro disparos en el tórax que le provocaron la muerte, según el resultado preliminar de autopsia, informaron fuentes judiciales.
 
                     El informe sobre el estudio forense practicado al cuerpo de Sabo (45) indica que el kiosquero recibió “por lo menos el impacto de cuatro proyectiles”, dijo a Télam un vocero con acceso a la investigación.
                     
