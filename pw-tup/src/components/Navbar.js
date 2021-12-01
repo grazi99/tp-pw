@@ -14,7 +14,8 @@ function Navbar() {
              <Link to="/" className="button boton-navbar">Inicio</Link>
         </div>
         <div className="fila-navbar">
-            <Link to="/test" className="button boton-navbar">Test</Link>
+            <Link to="/comunidad" className="button boton-navbar">Comunidad</Link>
+            <Link to="/profile" className="button boton-navbar">Perfil</Link>
             <Link to="/login" className="button boton-navbar">Iniciar sesion</Link>
             <Link to="/register" className="button boton-navbar">Registrate</Link>
         </div>

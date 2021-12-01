@@ -8,7 +8,6 @@ import {
   
 } from "react-router-dom";
 import Inicio from './components/Inicio';
-import Testeo from './components/Testeo';
 import Login from './components/Login';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
@@ -19,15 +18,23 @@ import NoticiaD2 from './components/NoticiaD2';
 import Deportes from './components/Deportes';
 import Politica from './components/Politica';
 import Espectaculos from './components/Espectaculos';
+import Comunidad from './components/Comunidad';
+import AuthRoute from './components/AuthRoute';
+import Profile from './components/Profile';
 
 export default function App() {
   return (
     <Router>
       <Navbar />
         <Switch>
-          <Route path="/test">
-            <Testeo />
-          </Route>
+        <Route exact={true} path="/login">
+          <Login />
+        </Route>
+        <Route path="/profile">
+        <AuthRoute>
+          <Profile />
+        </AuthRoute>
+        </Route>
           <Route path="/noticiaUM1">
             <NoticiaUM1 />
           </Route>
@@ -39,6 +46,9 @@ export default function App() {
           </Route>
           <Route path="/noticiaD2">
             <NoticiaD2 />
+          </Route>
+          <Route path="/comunidad">
+            <Comunidad />
           </Route>
           <Route path="/login">
             <Login />
