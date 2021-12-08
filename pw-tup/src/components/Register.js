@@ -3,7 +3,7 @@ import {httpGet, httpPost,httpPost2} from "../utils/httpFunctions";
 import {useHistory} from 'react-router-dom';
 import {Link} from "react-router-dom";
 import swal from 'sweetalert2';
-import './profile.css';
+import './register.css';
 
 
 const Register = () => {
@@ -42,48 +42,50 @@ const Register = () => {
   
 
   return (
-  <div className='margen'>
-      <div className='welcome-text-container'><h1>Registrate!</h1></div>
-      <div className='form-container'>
-  <div className="main-div">
+  <div class="caja">
+    <div class="caja-central">
+        <div class="caja-central-titulo">
+            <h3>Crea tu cuenta</h3>
+        </div>
+    <div class="ingreso-datos-register">
     <form onSubmit={signin}>
-      <fieldset>
         <div className="mb-3">
-          <label htmlFor="disabledTextInput" className="form-label">Name</label>
-          <input type="text" id="disabledTextInput" className="form-control" value={first_name}
+          <label htmlFor="disabledTextInput">Nombre</label><br/>
+          <input type="text" id="disabledTextInput" value={first_name}
                  onChange={(e) => setFirstname(e.target.value) }/>
         </div>
         <div className="mb-3">
-          <label htmlFor="disabledTextInput" className="form-label">Apellido</label>
-          <input type="text" id="disabledTextInput" className="form-control" value={last_name}
+          <label htmlFor="disabledTextInput">Apellido</label><br/>
+          <input type="text" id="disabledTextInput" value={last_name}
                  onChange={(e) => setLastname(e.target.value) }
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="disabledTextInput" className="form-label">Email</label>
-          <input type="text" id="disabledTextInput" className="form-control" value={email}
+          <label htmlFor="disabledTextInput">Email</label><br/>
+          <input type="text" id="disabledTextInput" value={email}
                  onChange={(e) => setEmail(e.target.value) }
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="disabledTextInput" className="form-label">Usuario</label>
-          <input type="text" id="disabledTextInput" className="form-control" value={username}
+          <label htmlFor="disabledTextInput">Usuario</label><br/>
+          <input type="text" id="disabledTextInput" value={username}
                  onChange={(e) => setUsername(e.target.value) }
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="disabledTextInput" className="form-label">Contraseña</label>
-          <input type="password" id="disabledTextInput" className="form-control" value={password}
+          <label htmlFor="disabledTextInput">Contraseña</label><br/>
+          <input type="password" id="disabledTextInput" value={password}
                  onChange={(e) => setPassword(e.target.value) }
           />
         </div>
+        <br/>
         <button type="submit" className="btn btn-primary">Registrarse</button>
         <Link to={'/inicio'}><button class="btn btn-secondary">Volver al Inicio</button></Link>
-      </fieldset>
     </form>
-    </div>
   </div>
   </div>
+  </div>
+   
 )
 }
 

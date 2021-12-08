@@ -44,6 +44,8 @@ function Noticias2({noticias}) {
                         <h2>{noticias.title}</h2>
                         <h4 style={{width: "900px"}}>{noticias.author}</h4>
                     </div>
+            <p style={{marginLeft:"10px"}}>{noticias.date}</p>
+            <br/>
             <div className="imagen">
             <img src={img} width="500"/>
             </div>
@@ -53,8 +55,7 @@ function Noticias2({noticias}) {
                     {noticias.body}
                 </p>
             </div>
-                <p>{noticias.date}</p>
-        </div>
+            </div>
         <div>
                 <form onSubmit={deleteNews}>
                 <button type="submit" className="bg-black text-white px-2 px-1">

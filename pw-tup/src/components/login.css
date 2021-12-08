@@ -43,10 +43,11 @@ body{
     border-width: 1px;
 }
 
-.ingreso-datos{
+.ingreso-datos-login{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    padding-top: 40px;
     gap: 20px;
 }
 .centrar{

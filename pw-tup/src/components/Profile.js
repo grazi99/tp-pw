@@ -9,13 +9,21 @@ const Profile = () => {
     httpGet('api/me/').then((res) => setUserData(res.data))
   }, [])
 
-  return <div className="margen">
-    <h2>Perfil de usuario</h2>
-    <h3>Usuario:{userData.username}</h3>
-    <h3>Nombre:{userData.first_name}</h3>
-    <h3>Apellido:{userData.last_name}</h3>
-
+  return (
+  <div class="caja">
+    <div class="caja-central">
+        <div class="caja-central-titulo">
+            <h3>Perfil de usuario</h3>
+        </div>
+    <div class="ingreso-datos-profile">
+      <h3>Usuario: {userData.username}</h3>
+      <h3>Nombre: {userData.first_name}</h3>
+      <h3>Apellido: {userData.last_name}</h3>
+      <h3>Mail : {userData.email}</h3>
+    </div>
+    </div>
   </div>
+  )
 }
 
 export default Profile

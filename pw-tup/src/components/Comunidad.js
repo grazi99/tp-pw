@@ -29,57 +29,51 @@ export default function Comunidad() {
         httpPost('api/news/', { title: title, author:author, body:body, date:date})
           .then(fetchNews)
     }
-/*
-    const deleteRecipe = () =>{
-        httpDelete('api/Recipes/'+{id:this.id} +"/")
-            .then(fetchRecipes)
-    }
 
-    const modifyRecipe = () =>{
-        httpPut('api/Recipes/'+ {id:this.id})
-            .then(fetchRecipes)
-    }
-*/ 
       useEffect(fetchNews, [])
 
     return (
         <div>
-            <div>
-                <h1>Noticias</h1>
-            </div>
-            <div className="inputWide">
+            <div class="caja">
+                <div class="caja-central-comunidad">
+                    <div class="caja-central-titulo">
+                        <h3>Crear noticias</h3>
+                    </div>
                 <form onSubmit={createNews}>
-                    <fieldset>
-                        <legend>Crear noticias</legend>
-                        <div className="mb-3">
-                            <label htmlFor="disabledTextInput" className="form-label">Titulo</label>
-                            <input type="text" id="disabledTextInput" className="form-control" value={title}
+            <div class="ingreso-datos-comunidad">
+                        <div>
+                            <label htmlFor="disabledTextInput">Titulo</label>
+                            <input type="text" id="disabledTextInput" value={title}
                                    onChange={(e) => setTitle(e.target.value)}
                             />
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="disabledTextInput" className="form-label">Autor</label>
-                            <input type="text" id="disabledTextInput" className="form-control" value={author}
+                        <div>
+                            <label htmlFor="disabledTextInput">Autor</label>
+                            <input type="text" id="disabledTextInput" value={author}
                                    onChange={(e) => setAuthor(e.target.value)}
-                            />
+                                   />
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="disabledTextInput" className="form-label">Cuerpo</label>
-                            <input type="text" id="disabledTextInput" className="form-control" value={body}
-                                   onChange={(e) => setBody(e.target.value)}
-                            />
-                        <div className="mb-3">
-                            <label htmlFor="disabledTextInput" className="form-label">Fecha</label>
-                            <input type="text" id="disabledTextInput" className="form-control" value={date}
+                        <div>
+                            <label htmlFor="disabledTextInput">Fecha</label>
+                            <input type="text" id="disabledTextInput" value={date}
                                    onChange={(e) => setDate(e.target.value)}
                                    placeholder="Ej: 2021-11-30"
                             />
                         </div>
+                        <div>
+                            <label htmlFor="TextInput">Cuerpo</label>
+                            <textarea type="text" id="TextInput" value={body}
+                                   onChange={(e) => setBody(e.target.value)}>
+                            </textarea>
                         </div>
+                    </div>
                         <button type="submit" className="btn btn-primary">CREAR NOTICIA</button>
-                    </fieldset>
                 </form>
             </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
             <div className="displayNoticias">
                     {
                         news

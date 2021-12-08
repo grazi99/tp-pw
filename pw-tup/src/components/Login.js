@@ -18,12 +18,15 @@ function Login() {
     })
   }
     return (
-        <div className='margen'>
-      <div className='welcome-text-container'><h1>Inicio de sesión</h1></div>
-      <br/>
+  <div class="caja">
+    <div class="caja-central">
+          <div class="caja-central-titulo">
+              <h3>Inicio de sesion</h3>
+          </div>
+    <div class="ingreso-datos-login">
       <form className='form-container' onSubmit={login}>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Usuario</label>
+          <label htmlFor="exampleFormControlInput1" className="form-label">Usuario</label><br/>
           <input
             className="form-control"
             id="exampleFormControlInput1"
@@ -32,20 +35,22 @@ function Login() {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlTextarea1" className="form-label">Contraseña</label>
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">Contraseña</label><br/>
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             className="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Password" />
+            id="exampleFormControlInput1" />
         </div>
+        <br/>
         <div className={'button-container'}>
-          <button type="submit" className="btn btn-primary">Login</button>
+          <button type="submit" className="btn btn-primary">Iniciar sesion</button>
         </div>
       </form>
+        </div>
     </div>
+  </div>
     )
 }
 
