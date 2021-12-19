@@ -18,7 +18,7 @@ function Inicio() {
             
             <div className="caja-titulo titulo">
                 <div className="centrar">
-                    <div className="alineacion-titulo">
+                    <div className="alineacion-titulo p2">
                         <h1 style={{color:"brown"}} className="centrar">Nino Noticias</h1>
                 </div>
             </div>
@@ -34,7 +34,7 @@ function Inicio() {
                         </div>
                         <div className="alinear-caja1">
                                 <Link to="/noticiaUM1">
-                                    <button className="button boton-caja1-ofertas margen">
+                                    <button className="button boton-caja1-ofertas margen-caja1">
                                         <div className="caja1-ofertas display-ofertas">
                                             <b>El presidente se reunio en la quinta de Olivos</b>
                                             <img src={img1} alt="" width="250"/>
@@ -42,7 +42,7 @@ function Inicio() {
                                     </button>
                                 </Link>
                             <Link to="/noticiaUM2">
-                            <button className="button boton-caja1-ofertas margen">
+                            <button className="button boton-caja1-ofertas margen-caja1">
                                 <div className="caja1-ofertas display-ofertas">
                                     <b>El homicidio del kiosquero</b>
                                     <img src={img4} width="250"/>
@@ -57,7 +57,7 @@ function Inicio() {
                         </div>
                         <div className="alinear-caja1">
                             <Link to="/noticiaD1">    
-                            <button className="button boton-caja1-ofertas margen">
+                            <button className="button boton-caja1-ofertas margen-caja1">
                                 <div className="caja1-ofertas display-ofertas">
                                     <b>El PSG de Messi triunfó en Manchester</b>
                                     <img src={img2} width="250"/>
@@ -65,7 +65,7 @@ function Inicio() {
                             </button>
                             </Link>
                             <Link to="/noticiaD2">
-                            <button className="button boton-caja1-ofertas margen">
+                            <button className="button boton-caja1-ofertas margen-caja1">
                                 <div className="caja1-ofertas display-ofertas">
                                     <b>70 nuevos casos de COVID-19 en Rosario</b>
                                     <img src={img3} width="250"/>
@@ -76,9 +76,9 @@ function Inicio() {
                     </div>
                 </div>
                 <div className="caja-menu3">
-                    <div className="lista">
+                    <div className="lista p3">
                         <h4 style={{marginLeft:"50px"}}>Categorias</h4>
-                        <ul className="separacion-lista">
+                        <ul className="separacion-lista p3">
                             <Link to="/deportes"><li>Deportes</li></Link>
                             <Link to="/politica"><li>Politica</li></Link>
                             <Link to="/espectaculos"><li>Espectaculos</li></Link>

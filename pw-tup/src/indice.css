@@ -4,6 +4,11 @@ body{
 .margen{
     margin:15px;
 }
+.margen-caja1{
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
 .titulo{
     display: flex;
     flex-direction: column;
@@ -128,4 +133,21 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+}
+.p2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+  }
+.p1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+  }
+.p3{
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
 }
