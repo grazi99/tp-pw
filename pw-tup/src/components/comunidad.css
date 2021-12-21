@@ -40,6 +40,13 @@ body{
     height: 200px;
     width: 1000px;
 }
+.caja-central-comunidad1{
+    margin-top: 20px;
+    margin-left: 120px;
+    background-color: orange;
+    height: 220px;
+    width: 1000px;
+}
 .caja-central-titulo{
     display: flex;
     justify-content: center;
@@ -62,12 +69,42 @@ body{
     margin-top: 8px;
     margin-left: 20px;
 }
+.ingreso-datos-comunidad1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 8px;
+    margin-left: 20px;
+}
 .centrar{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
+.caja-boton-buscar{
+   margin-top: 20px;
+}
+.boton-buscar{
+    margin-top: 40px;
+    margin-left: 972.5px;
+}
+.boton-volver{
+    margin-top: 40px;
+    margin-left: 939px;
+}
 #TextInput{
     height: 100px;
     width: 300px;
+}
+#TextInput1{
+    height: 20px;
+    width: 180px;
+}
+#TextInput2{
+    height: 20px;
+    width: 180px;
+}
+#TextInput3{
+    height: 20px;
+    width: 180px;
 }

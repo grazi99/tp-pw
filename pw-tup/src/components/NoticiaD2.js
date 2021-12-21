@@ -14,7 +14,7 @@ function NoticiaD2() {
                 <img src={img} width="500"/>
             </div>
             <div className="textoNoticiaD2">
-                <p style={{width: "800px"}}>
+                <p className='p1' style={{width: "800px"}}>
                     El Ministerio de Salud de Santa Fe informó este sábado 42 casos de coronavirus en todo el territorio provincial, de los cuales 25 fueron registrados en Rosario.
 
                     Con estos números, desde el comienzo de la pandemia los infectados en la provincia ascienden a 470.924.

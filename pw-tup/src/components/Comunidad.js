@@ -1,8 +1,10 @@
 import React from 'react';
 import './comunidad.css';
+import { Link, Route } from 'react-router-dom';
 import {useEffect, useState} from "react";
 import {httpGet, httpPost} from "../utils/httpFunctions";
 import Noticias2 from './Noticias2';
+import Busqueda from './Busqueda';
 const axios = require('axios');
 export default function Comunidad() {
     
@@ -13,18 +15,12 @@ export default function Comunidad() {
     const [body, setBody] = useState([])
     const [date, setDate] = useState([])
 
-    const clickFunction = () => {
-        setFiltered(!filtered)
-    }
-    const getNews = () => {
-    return filtered ? "Dejar de filtrar" : "Filtrar"
-}
     const fetchNews = () => {
         httpGet('api/news/')
           .then((res) => setNews(res.data))
-
       }
-    
+
+
     const createNews = () => {
         httpPost('api/news/', { title: title, author:author, body:body, date:date})
           .then(fetchNews)
@@ -34,13 +30,19 @@ export default function Comunidad() {
 
     return (
         <div>
+        <div className='boton-buscar'>
+            <Link to="/busqueda" className="button boton-navbar p1">Buscar noticias</Link>
+            <Route path="/busqueda">
+                <Busqueda/>
+            </Route>
+        </div>
             <div class="caja">
                 <div class="caja-central-comunidad">
                     <div class="caja-central-titulo">
                         <h3>Crear noticias</h3>
                     </div>
                 <form onSubmit={createNews}>
-            <div class="ingreso-datos-comunidad">
+                    <div class="ingreso-datos-comunidad">
                         <div>
                             <label htmlFor="disabledTextInput">Titulo</label>
                             <input type="text" id="disabledTextInput" value={title}
@@ -70,10 +72,12 @@ export default function Comunidad() {
                         <button type="submit" className="btn btn-primary">CREAR NOTICIA</button>
                 </form>
             </div>
-                </div>
+            </div>
+            <div>
                 <br/>
                 <br/>
                 <br/>
+            </div>
             <div className="displayNoticias">
                     {
                         news
@@ -88,6 +92,3 @@ export default function Comunidad() {
         
     )
 }
-
-
-

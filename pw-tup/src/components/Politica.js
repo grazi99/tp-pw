@@ -10,10 +10,10 @@ function Politica() {
     return (
         <div className="margen">
         <div className="titulos">
-        <h4><Link to="/politica/n1">La Casa Rosada fija nuevo rumbo a la política con el acuerdo con el FMI como eje</Link></h4>
-        <h4><Link to="/politica/n2">Tras el ataque a Clarín, denuncian otro acto vandálico contra un canal de noticias de Vicente López</Link></h4>
-        <h4><Link to="/politica/n3">Intentan que noticias falsas sean consideradas violencia política de género</Link></h4>
-        <h4><Link to="/politica/n4">Buscan que el programa Previaje se convierta en una política de Estado</Link></h4>
+        <h4><Link to="/politica/n1" className='p3'>La Casa Rosada fija nuevo rumbo a la política con el acuerdo con el FMI como eje</Link></h4>
+        <h4><Link to="/politica/n2" className='p3'>Tras el ataque a Clarín, denuncian otro acto vandálico contra un canal de noticias de Vicente López</Link></h4>
+        <h4><Link to="/politica/n3" className='p3'>Intentan que noticias falsas sean consideradas violencia política de género</Link></h4>
+        <h4><Link to="/politica/n4" className='p3'>Buscan que el programa Previaje se convierta en una política de Estado</Link></h4>
         </div>
         <Route path='/politica/n1'>
             <Noticias1 

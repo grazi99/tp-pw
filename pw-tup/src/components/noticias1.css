@@ -9,3 +9,25 @@ margen{
     grid-template-rows: auto auto;
     background-color:orange;
 }
+.p2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+  }
+.p1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+  }
+.p3{
+    font-weight: 10;
+    text-decoration: none;
+    color: black;
+}
+.p4{
+    font-weight: 10;
+    text-decoration: none;
+    color: blue;
+}

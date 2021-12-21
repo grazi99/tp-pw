@@ -11,10 +11,10 @@ function Deportes() {
     return (
         <div className="margen">
             <div className="titulos">
-            <h4><Link to="/deportes/n1">Djokovic campéon de Wimbledon 2021</Link></h4>
-            <h4><Link to="/deportes/n2">River gana el torneo 2021</Link></h4>
-            <h4><Link to="/deportes/n3">Falleció Sir Frank Williams</Link></h4>
-            <h4><Link to="/deportes/n4">Así se conmemoraron los cinco años de la tragedia del Chapecoense</Link></h4>
+            <h4><Link to="/deportes/n1" className='p3'>Djokovic campéon de Wimbledon 2021</Link></h4>
+            <h4><Link to="/deportes/n2" className='p3'>River gana el torneo 2021</Link></h4>
+            <h4><Link to="/deportes/n3" className='p3'>Falleció Sir Frank Williams</Link></h4>
+            <h4><Link to="/deportes/n4" className='p3'>Así se conmemoraron los cinco años de la tragedia del Chapecoense</Link></h4>
             </div>
             <Route path='/deportes/n1'>
                 <Noticias1 

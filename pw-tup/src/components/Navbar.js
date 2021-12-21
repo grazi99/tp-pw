@@ -1,4 +1,5 @@
 import React from 'react'
+import  '/Users/gra/Trabajo-Practico-PW/pw-tup/src/indice.css';
 import {
     BrowserRouter as Router,
     Switch,

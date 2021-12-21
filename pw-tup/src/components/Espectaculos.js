@@ -11,10 +11,10 @@ function Espectaculos() {
     return (
         <div className="margen">
             <div className="titulos">
-            <h4><Link to="/espectaculos/n1">LOLLAPALOOZA: ¡COMENZÓ LA VENTA DE TICKETS!</Link></h4>
-            <h4><Link to="/espectaculos/n2">Murió el periodista de espectáculos Guillermo Blanc</Link></h4>
-            <h4><Link to="/espectaculos/n3">Francia prohibirá el uso de animales en circos y otros espectáculos en vivo</Link></h4>
-            <h4><Link to="/espectaculos/n4">La Ciudad de Buenos Aires restringe los eventos públicos</Link></h4>
+            <h4><Link to="/espectaculos/n1" className='p3' >LOLLAPALOOZA: ¡COMENZÓ LA VENTA DE TICKETS!</Link></h4>
+            <h4><Link to="/espectaculos/n2" className='p3'>Murió el periodista de espectáculos Guillermo Blanc</Link></h4>
+            <h4><Link to="/espectaculos/n3" className='p3'>Francia prohibirá el uso de animales en circos y otros espectáculos en vivo</Link></h4>
+            <h4><Link to="/espectaculos/n4" className='p3'>La Ciudad de Buenos Aires restringe los eventos públicos</Link></h4>
             </div>
             <Route path='/espectaculos/n1'>
                 <Noticias1 

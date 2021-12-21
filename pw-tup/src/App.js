@@ -21,6 +21,7 @@ import Espectaculos from './components/Espectaculos';
 import Comunidad from './components/Comunidad';
 import AuthRoute from './components/AuthRoute';
 import Profile from './components/Profile';
+import Busqueda from './components/Busqueda';
 
 export default function App() {
   return (
@@ -64,6 +65,9 @@ export default function App() {
           </Route>
           <Route path="/espectaculos">
             <Espectaculos />
+          </Route>
+          <Route path="/busqueda">
+            <Busqueda />
           </Route>
           <Route path="/">
             <Inicio />

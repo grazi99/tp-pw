@@ -1,9 +1,9 @@
 import React from 'react';
+import '/Users/gra/Trabajo-Practico-PW/pw-tup/src/indice.css';
 import img1 from './alberto.jpg'
 import img2 from './messi.jpg'
 import img3 from './covid.jpg'
 import img4 from './kiosquero.jpg'
-
 import {
     BrowserRouter as Router,
     Switch,
@@ -85,6 +85,7 @@ function Inicio() {
                         </ul>
                     </div>
                 </div>
+                <div className='TESTEO'>wasas</div>
             </div>
         </div>       
     </>
